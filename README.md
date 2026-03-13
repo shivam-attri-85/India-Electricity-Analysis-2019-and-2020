@@ -40,7 +40,7 @@ python3 app.py
 If your project path has spaces (like yours), this command always works:
 
 ```bash
-"/media/shivam/OS/Users/shiva/Desktop/CODING/DATA ANALYTICS GROUP PROJECT/.venv/bin/python" app.py
+"path" app.py
 ```
 
 6. Open in browser:
