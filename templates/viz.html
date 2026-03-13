@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}{{ view.title }} | Tableau Flask App{% endblock %}
+
+{% block content %}
+<section class="viz-header">
+    <h1>{{ view.title }}</h1>
+    <p>Embedded with Tableau Public URL inside an iframe.</p>
+</section>
+
+<section class="viz-wrapper" aria-label="Tableau Embedded Visualization">
+    <iframe
+        src="{{ view.url }}"
+        title="{{ view.title }}"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+</section>
+{% endblock %}

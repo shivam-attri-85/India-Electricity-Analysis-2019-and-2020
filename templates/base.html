@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Tableau Flask App{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-row">
+            <a class="brand" href="{{ url_for('home') }}">
+                <span class="brand-kicker">India Power Analytics</span>
+                <span class="brand-main">Electricity Insights</span>
+            </a>
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a class="{% if request.endpoint == 'story' %}active{% endif %}" href="{{ url_for('story') }}">Story</a>
+                <a class="{% if request.endpoint == 'dashboards' %}active{% endif %}" href="{{ url_for('dashboards') }}">Dashboards</a>
+                <a class="{% if request.endpoint == 'conclusion' %}active{% endif %}" href="{{ url_for('conclusion') }}">Conclusion</a>
+                {% if auth_enabled and logged_in %}
+                <a href="{{ url_for('logout') }}">Logout</a>
+                {% endif %}
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Built with Flask and Tableau Public embeds for interactive energy analytics.</p>
+        </div>
+    </footer>
+</body>
+</html>

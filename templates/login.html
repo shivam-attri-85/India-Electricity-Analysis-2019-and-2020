@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | Tableau Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="login-shell">
+        <section class="login-card">
+            <h1>Protected Access</h1>
+            <p>Enter app password to view Tableau story and dashboards.</p>
+
+            {% if error %}
+            <p class="error-msg">{{ error }}</p>
+            {% endif %}
+
+            <form method="post">
+                <input type="hidden" name="next" value="{{ next_url }}">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

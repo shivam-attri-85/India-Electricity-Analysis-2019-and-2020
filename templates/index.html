@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Tableau Flask App{% endblock %}
+
+{% block content %}
+<section class="hero fade-in">
+    <p class="eyebrow">Data Analytics Group Project</p>
+    <h1>Electricity Consumption Insights for India</h1>
+    <p>Explore a complete Tableau story, compare all dashboards in one place, and review final conclusions in a clean report-style interface.</p>
+</section>
+
+<section class="stats-strip fade-in-delay-1">
+    <article>
+        <h3>1</h3>
+        <p>Story Page</p>
+    </article>
+    <article>
+        <h3>3</h3>
+        <p>Dashboards</p>
+    </article>
+    <article>
+        <h3>1</h3>
+        <p>Conclusion Page</p>
+    </article>
+</section>
+
+<section class="cards-grid fade-in-delay-2">
+    <a class="card card-story" href="{{ url_for('story') }}">
+        <h2>Story</h2>
+        <p>Walk through the narrative of electricity consumption trends with guided visuals.</p>
+    </a>
+    <a class="card card-dashboards" href="{{ url_for('dashboards') }}">
+        <h2>All Dashboards</h2>
+        <p>View Dashboard 1, Dashboard 2, and Dashboard 3 together for direct comparison.</p>
+    </a>
+    <a class="card card-conclusion" href="{{ url_for('conclusion') }}">
+        <h2>Conclusion</h2>
+        <p>Read the project summary, key findings, and suggested policy actions.</p>
+    </a>
+</section>
+{% endblock %}

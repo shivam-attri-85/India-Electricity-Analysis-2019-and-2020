@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboards | Tableau Flask App{% endblock %}
+
+{% block content %}
+<section class="viz-header fade-in">
+    <p class="eyebrow">Comparative Analysis</p>
+    <h1>All Dashboards</h1>
+    <p>This page combines all Tableau dashboards in one structured view for easier side-by-side review.</p>
+</section>
+
+{% for dashboard in dashboards %}
+<section class="dashboard-section fade-in-delay-{{ loop.index if loop.index < 3 else 3 }}">
+    <div class="section-head">
+        <span>View {{ loop.index }}</span>
+        <h2>{{ dashboard.title }}</h2>
+    </div>
+    <section class="viz-wrapper" aria-label="{{ dashboard.title }}">
+        <iframe
+            src="{{ dashboard.url }}"
+            title="{{ dashboard.title }}"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+    </section>
+</section>
+{% endfor %}
+{% endblock %}

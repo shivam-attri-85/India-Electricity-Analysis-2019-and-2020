@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Story | Tableau Flask App{% endblock %}
+
+{% block content %}
+<section class="viz-header fade-in">
+    <p class="eyebrow">Narrative View</p>
+    <h1>{{ story.title }}</h1>
+    <p>This page presents the full interactive Tableau story in one narrative flow.</p>
+</section>
+
+<section class="viz-wrapper fade-in-delay-1" aria-label="Tableau Story">
+    <iframe
+        src="{{ story.url }}"
+        title="{{ story.title }}"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+</section>
+{% endblock %}
