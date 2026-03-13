@@ -2,6 +2,10 @@
 
 This Flask app embeds your Tableau Public story and dashboards using `iframe` URLs derived from `embade code tablue.txt`.
 
+## Live Demo
+
+- https://india-electricity-analysis-2019-and.vercel.app/
+
 ## Included Views
 
 - Story page: `StoryonElectricityConsumptioninIndia`
