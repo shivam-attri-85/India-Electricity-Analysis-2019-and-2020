@@ -17,8 +17,14 @@ This Flask app embeds your Tableau Public story and dashboards using `iframe` UR
 ### Website Snapshots
 
 ![Home Page](./Screenshot%20from%202026-03-13%2022-39-34.png)
+![Website Snapshot 2](./Screenshot%20from%202026-03-13%2022-40-06.png)
 ![Story Page](./Screenshot%20from%202026-03-13%2022-40-23.png)
+![Website Snapshot 4](./Screenshot%20from%202026-03-13%2022-40-31.png)
+![Website Snapshot 5](./Screenshot%20from%202026-03-13%2022-40-40.png)
+![Website Snapshot 6](./Screenshot%20from%202026-03-13%2022-40-46.png)
 ![Dashboards Page](./Screenshot%20from%202026-03-13%2022-40-59.png)
+![Website Snapshot 8](./Screenshot%20from%202026-03-13%2022-41-10.png)
+![Website Snapshot 9](./Screenshot%20from%202026-03-13%2022-41-23.png)
 ![Conclusion Page](./Screenshot%20from%202026-03-13%2022-41-30.png)
 
 ## Included Views
@@ -41,13 +47,6 @@ source .venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-
-### Website Snapshots
-
-![Home Page](./Screenshot%20from%202026-03-13%2022-39-34.png)
-![Story Page](./Screenshot%20from%202026-03-13%2022-40-23.png)
-![Dashboards Page](./Screenshot%20from%202026-03-13%2022-40-59.png)
-![Conclusion Page](./Screenshot%20from%202026-03-13%2022-41-30.png)
 
 4. (Optional) enable password protection:
 
