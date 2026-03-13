@@ -6,8 +6,22 @@ This Flask app embeds your Tableau Public story and dashboards using `iframe` UR
 
 - https://india-electricity-analysis-2019-and.vercel.app/
 
-## Included Views
+## Collaborators
 
+- GitSKY9795 (Sumeet Kumar Yadav)
+- vishalkumar2501 (Vishal Kumar)
+- Vishal795-knightrider (Vishal Kashyap)
+- Shivam Kumar
+
+
+### Website Snapshots
+
+![Home Page](./Screenshot%20from%202026-03-13%2022-39-34.png)
+![Story Page](./Screenshot%20from%202026-03-13%2022-40-23.png)
+![Dashboards Page](./Screenshot%20from%202026-03-13%2022-40-59.png)
+![Conclusion Page](./Screenshot%20from%202026-03-13%2022-41-30.png)
+
+## Included Views
 - Story page: `StoryonElectricityConsumptioninIndia`
 - Dashboards page: `Dashboard1`, `Dashboard2`, `Dashboard3`
 - Conclusion page: text summary and key insights
@@ -27,6 +41,13 @@ source .venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
+### Website Snapshots
+
+![Home Page](./Screenshot%20from%202026-03-13%2022-39-34.png)
+![Story Page](./Screenshot%20from%202026-03-13%2022-40-23.png)
+![Dashboards Page](./Screenshot%20from%202026-03-13%2022-40-59.png)
+![Conclusion Page](./Screenshot%20from%202026-03-13%2022-41-30.png)
 
 4. (Optional) enable password protection:
 
