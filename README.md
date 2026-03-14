@@ -13,6 +13,10 @@ This Flask app embeds your Tableau Public story and dashboards using `iframe` UR
 - Vishal795-knightrider (Vishal Kashyap)
 - Shivam Kumar
 
+## Full Documentation
+
+- See `PROJECT_DOCUMENTATION.md` for detailed project documentation, analysis ideas, and reporting structure.
+
 
 ### Website Snapshots
 
